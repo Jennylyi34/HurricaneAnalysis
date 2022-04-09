@@ -68,7 +68,7 @@ hurricanes_by_year = (hurricane_year(hurricane_dict))
 print(hurricanes_by_year)
 
 # write your count affected areas function here:
-ef count_affected_areas(dictionary):
+def count_affected_areas(dictionary):
   areas = {}
   for data in dictionary:
     areas_affected = dictionary[data]["Areas Affected"]
@@ -88,7 +88,7 @@ def most_affected_area(dictionary):
   max_key = [key for key,value in dictionary.items() if value == max_value]
   return max_key, max_value
 
-most_affected = most_affected_area(affected_areas_count))
+most_affected = most_affected_area(affected_areas_count)
 
 # write your greatest number of deaths function here:
 def most_deaths(dictionary):
