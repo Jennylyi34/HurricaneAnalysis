@@ -39,6 +39,7 @@ def conversion(damages):
   return updated_damages
 
 updated_damages = conversion(damages)
+print(updated_damages)
 
 # write your construct hurricane dictionary function here:
 def create_dict(name, month, year, max_sustained_wind, areas_affected, damage, death):
@@ -48,6 +49,7 @@ def create_dict(name, month, year, max_sustained_wind, areas_affected, damage, d
   return hurricane
 
 hurricane_dict = (create_dict(names, months, years, max_sustained_winds, areas_affected, updated_damages, deaths))
+print(hurricane_dict)
 
 # write your construct hurricane by year dictionary function here:
 def hurricane_year(hurricanes):
@@ -63,6 +65,7 @@ def hurricane_year(hurricanes):
   return new_dict
 
 hurricanes_by_year = (hurricane_year(hurricane_dict))
+print(hurricanes_by_year)
 
 # write your count affected areas function here:
 ef count_affected_areas(dictionary):
@@ -77,6 +80,7 @@ ef count_affected_areas(dictionary):
   return (areas)
 
 affected_areas_count = (count_affected_areas(hurricane_dict))
+print(affected_areas_count)
 
 # write your find most affected area function here:
 def most_affected_area(dictionary):
@@ -97,6 +101,7 @@ def most_deaths(dictionary):
   return deadliest_hurricane, highest_death_count
 
 deadliest_hurricane = most_deaths(hurricane_dict)
+print(deadliest_hurricane)
 
 # write your catgeorize by mortality function here:
 def mortality_scale(dict):
@@ -124,6 +129,7 @@ def mortality_scale(dict):
   return new_dict
 
 mortality_dict = (mortality_scale(hurricane_dict))
+print(mortality_dict)
 
 # write your greatest damage function here:
 def highest_damage(dictionary):
@@ -138,6 +144,7 @@ def highest_damage(dictionary):
   return hurricane, highest_damage
 
 highest_damage_hurricane = (highest_damage(hurricane_dict))
+print(highest_damage_hurricane)
 
 # write your catgeorize by damage function here:
 def damage_scale(dict):
@@ -165,3 +172,4 @@ def damage_scale(dict):
   return damage_dict
 
 damage_dict = (damage_scale(hurricane_dict))
+print(damage_dict)
